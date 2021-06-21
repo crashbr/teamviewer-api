@@ -18,7 +18,7 @@ async function deleteHosts(url,array){
 
     for(let i = 0; i < array.length; i++){
         let deleteUrl = url + array[i]
-        //await axios.delete(deleteUrl,headers)
+        await axios.delete(deleteUrl,headers)
         console.log(`Device ${array[i]} deleted, ${deleteUrl}`)
     }
 }
